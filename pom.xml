@@ -16,22 +16,22 @@
 
         <vavr.version>0.10.4</vavr.version>
 
-        <commons.version>3.12.0</commons.version>
+        <commons.version>3.14.0</commons.version>
         <commons-collection.version>4.4</commons-collection.version>
 
-        <plugin.install.version>2.5.2</plugin.install.version>
-        <plugin.jar.version>3.0.2</plugin.jar.version>
-        <plugin.source.version>3.0.1</plugin.source.version>
-        <plugin.javadoc.version>3.1.1</plugin.javadoc.version>
-        <plugin.compiler.version>3.7.0</plugin.compiler.version>
+        <!-- Maven Plugin Versions Updated for Java 21 Compatibility -->
+        <plugin.install.version>3.1.2</plugin.install.version>
+        <plugin.jar.version>3.4.2</plugin.jar.version>
+        <plugin.source.version>3.3.1</plugin.source.version>
+        <plugin.javadoc.version>3.10.0</plugin.javadoc.version>
+        <plugin.compiler.version>3.13.0</plugin.compiler.version>
 
-        <javadoc.java.version>17</javadoc.java.version>
-
-        <java.version>17</java.version>
-        <java.target.version>17</java.target.version>
-
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <!-- Java 21 properties -->
+        <javadoc.java.version>21</javadoc.java.version>
+        <java.version>21</java.version>
+        <java.target.version>21</java.target.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -95,7 +95,7 @@
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-compiler-plugin</artifactId>
-                        <version>${plugin.compiler.version}</version><!-- $NO-MVN-MAN-VER$ -->
+                        <version>${plugin.compiler.version}</version>
                         <configuration>
                             <source>${java.version}</source>
                             <target>${java.target.version}</target>
